@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="135.0" prefWidth="749.0">
+         <children>
+            <StackPane prefHeight="125.0" prefWidth="180.0">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/hust.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets top="10.0" />
+                     </StackPane.margin>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </StackPane>
+            <Label alignment="CENTER" prefHeight="134.0" prefWidth="433.0" text="Danh Sách Bạn Bè" textFill="#2b55c4">
+               <font>
+                  <Font name="System Italic" size="48.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="135.0" prefWidth="150.0">
+               <children>
+                  <HBox layoutY="103.0" prefHeight="37.0" prefWidth="124.0">
+                     <children>
+                        <Button fx:id="add" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="sub" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="update" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="reset" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Button fx:id="bell" layoutX="45.0" layoutY="20.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="35.0" />
+                  <Button fx:id="setting" layoutX="89.0" layoutY="20.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="35.0" />
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Pane>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <Separator prefHeight="15.0" prefWidth="467.0" />
+      <HBox prefHeight="234.0" prefWidth="756.0">
+         <children>
+            <ListView fx:id="listPerson" prefHeight="223.0" prefWidth="243.0">
+               <HBox.margin>
+                  <Insets bottom="1.0" left="5.0" right="1.0" top="1.0" />
+               </HBox.margin>
+            </ListView>
+            <Pane prefHeight="225.0" prefWidth="506.0">
+               <children>
+                  <GridPane layoutX="51.0" layoutY="26.0" prefHeight="183.0" prefWidth="249.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="63.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="186.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="15.0" right="5.0" top="10.0" />
+                           </GridPane.margin>
+                           <image>
+                              <Image url="@Images/sex.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="15.0" right="5.0" top="10.0" />
+                           </GridPane.margin>
+                           <image>
+                              <Image url="@Images/birthday.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="15.0" right="5.0" top="10.0" />
+                           </GridPane.margin>
+                           <image>
+                              <Image url="@Images/address.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="15.0" right="5.0" top="10.0" />
+                           </GridPane.margin>
+                           <image>
+                              <Image url="@Images/email.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="15.0" right="5.0" top="10.0" />
+                           </GridPane.margin>
+                           <image>
+                              <Image url="@Images/name.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="15.0" right="5.0" top="10.0" />
+                           </GridPane.margin>
+                           <image>
+                              <Image url="@Images/phone.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="textName" prefHeight="25.0" prefWidth="170.0" text="unknow" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="textSex" prefHeight="25.0" prefWidth="170.0" text="unknow" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="textDOB" prefHeight="25.0" prefWidth="170.0" text="yyyy/MM/dd" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="textAddress" prefHeight="25.0" prefWidth="170.0" text="unknow" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="textEmail" prefHeight="25.0" prefWidth="170.0" text="example@gmail.com" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="textPhone" prefHeight="25.0" prefWidth="170.0" text="xxxxxxxxxx" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <StackPane fx:id="avartar" layoutX="309.0" layoutY="13.0" prefHeight="200.0" prefWidth="183.0" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</VBox>
